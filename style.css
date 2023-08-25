@@ -397,6 +397,7 @@ nav .mobile-menu{
     font-family: 'Montserrat', sans-serif;
     font-weight: 1000;
     font-size: 23px;
+    flex-wrap: wrap;
 }
 .services .propositions-2 .content .head-contain i{
     padding: 0.2rem;
@@ -855,6 +856,7 @@ nav .mobile-menu{
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 .contact-form .terms_conditions label{
     font-size: 15px;
@@ -979,9 +981,9 @@ footer .copyright{
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: repeat(2,1fr);
     }
-    .team .team-member-list-container{
+    /* .team .team-member-list-container{
         padding: 2rem 0.75rem;
-    }
+    } */
     .team .team-member-list-container .team-member-list-item{
         width: 100%;
     }
@@ -1015,7 +1017,6 @@ footer .copyright{
     .home{
         flex-direction: column;
         gap: 3rem;
-        padding: 15px;
     }
     .propositions .img1{
         width: 100%;
@@ -1153,17 +1154,32 @@ footer .copyright{
         justify-content: space-between;
     }
 }
-/* @media screen and (min-width: 800px) and (max-width: 1200px) {
-    .intro{
-        padding: 1rem 2rem;
+@media only screen and (min-width: 600px){
+    /* .intro-sec{
+        padding: 2rem 3rem;
     }
-    .skill-container{
-        padding: 1rem 2rem;
+    .services .service-list-container {
+        padding: 2rem 2rem;
     }
-    .services{
-        padding: 1rem 1rem;
+    .services .propositions-1 .content {
+        padding: 2rem 2rem;
     }
-    .services .propositions .content {
-        padding: 3rem;
+    .services .propositions-2 .content {
+        padding: 2rem 2rem;
     }
-} */
+    .call_me{
+        padding: 2rem 5rem;
+    }
+    .projects{
+        padding: 2rem 2rem;
+    }
+    .about{
+        padding: 2rem 6rem;
+    }
+    .contact{
+        padding: 2rem 5rem;
+    }
+    footer{
+        padding: 3rem 8rem;
+    } */
+}
