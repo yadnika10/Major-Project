@@ -120,6 +120,7 @@ nav .mobile-menu{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    align-items: center;
     justify-content: center;
 }
 .intro .intro-details{
@@ -146,7 +147,6 @@ nav .mobile-menu{
 }
 .intro-details .intro_{
     color: #14BF98;
-    /* padding: 2rem 5px; */
 }
 .intro-details h1{
     color: rgb(43, 39, 39);
@@ -161,10 +161,17 @@ nav .mobile-menu{
 }
 
 /* ----Skill Container */
-.hexa img{
-    width: 6rem;
-    height: 6rem;
-    background-size: 6rem 6rem;
+.intro-sec .skill-container .div1 span{
+    background-color: #14BF98;
+    color: white;
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    margin-bottom: 1rem;
 }
 .skill-container{
     display: flex;
@@ -185,12 +192,6 @@ nav .mobile-menu{
 .skill-container div p{
     margin-top: 8px;
     color: gray;
-}
-.intro-sec .fa-solid{
-    color: white;
-    text-align: center;
-    transform: translate(-210%,-120%);
-    font-size: 2rem;
 }
 
 /* ----Services--- */
@@ -523,6 +524,10 @@ nav .mobile-menu{
 .call_me .form .terms_conditions{
     font-size: 14px;
 }
+.call_me .form .terms_conditions span{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* ---Projects--- */
 .filter{
@@ -584,11 +589,35 @@ nav .mobile-menu{
     display: grid;
     grid-template-rows: repeat(2,1fr);
     grid-template-columns: repeat(4,1fr);
+    margin-bottom: 3rem;
 }
 .project-list-container .project-item{
     aspect-ratio: 1/1;
     background-size: cover;
     background-position: center;
+    transition: all 0.3s;
+}
+.project-list-container .project-item-container{
+    overflow: hidden;
+    position: relative;
+}
+.project-list-container .project-item p{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    z-index: 3;
+    top: 45%;
+    left: 30%;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.project-list-container .project-item:hover{
+    filter: contrast(90%) grayscale(30%);
+    transform: scale(1.1);
+}
+.project-list-container .project-item:hover p{
+    opacity: 1;
 }
 .projects .project-item.p-1{
     background-image: url('./projects/project-1.jpg');
@@ -669,7 +698,8 @@ nav .mobile-menu{
 .team .team-member-list-item h5{
     color: #434141;
     line-height: 1.5rem;
-    font-size: 18px;
+    font-size: 13px;
+    font-weight: 1000;
 }
 .team .team-member-list-item .social-links{
     margin-top: 1rem;
@@ -786,7 +816,6 @@ nav .mobile-menu{
 }
 .contact .contact-content p{
     color: #484A46;
-    line-height: 1.5rem;
     font-size: 1rem;
 }
 .contact .contact-content .contact-info-list-container{
@@ -818,6 +847,10 @@ nav .mobile-menu{
     color: #14BF98;
     margin: 0 0.2rem;
 }
+.contact .contact-content .contact-info-list-container .contact-info-item span{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .contact .contact-content .social-links{
     display: flex;
     flex-direction: row;
@@ -827,21 +860,25 @@ nav .mobile-menu{
     font-size: 15px;
     color: #9c9f96;
 }
+.contact-form .terms_conditions span{
+    text-decoration: underline;
+    cursor: pointer;
+}
 /* ---Footer----- */
 footer{
-    padding: 5rem 14rem;
+    padding: 5rem 13rem;
     background-color: #113448;
 }
 .footer-sec{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
-    align-items: center;
-    gap: 2rem;
+    /* align-items: center; */
+    gap: 4rem;
 }
 .footer-sec .footer-item.words{
-    width: 50%;
+    width: 45%;
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -882,6 +919,7 @@ footer .copyright{
     nav .mobile-menu{
         display: initial;
         color: white;
+        font-size: 2rem;
     }
     .intro-sec{
         padding: 2rem 1.4rem;
@@ -941,7 +979,7 @@ footer .copyright{
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: repeat(2,1fr);
     }
-    .team{
+    .team .team-member-list-container{
         padding: 2rem 0.75rem;
     }
     .team .team-member-list-container .team-member-list-item{
@@ -990,6 +1028,32 @@ footer .copyright{
     }
 }
 @media screen and (max-width: 950px) {
+    .intro-sec{
+        padding: 2rem 1.4rem;
+    }
+    .intro-sec .intro{
+        flex-wrap: wrap;
+    }
+    .intro-sec .intro .intro-details{
+        width: 100%;
+        padding: 0;
+    }
+    .intro-sec .intro .intro-img{
+        width: 100%;
+        padding: 0;
+    }
+    .intro-sec .skill-container{
+        flex-wrap: wrap;
+    }
+    .intro-sec .skill-container .div1{
+        width: 100%;
+        padding: 0;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .services .service-list-container .item{
         width: 100%;
         flex-grow: 0;
@@ -999,6 +1063,38 @@ footer .copyright{
         flex-direction: column;
         gap: 5rem;
         padding: 3rem 1.5rem;
+    }
+    .team .team-member-list-container{
+        /* padding: 2rem 0.75rem; */
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .team .team-member-list-container .team-member-list-item{
+        width: 100%;
+    }
+    .team .team-member-list-container .profile-p{
+        width: 60%;
+    }
+    .about > img, .about > .content-class{
+        width: 100%;
+        padding: 0;
+    }
+    .about{
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 2rem;
+    }
+    .about .stat-list-container .stat-item{
+        flex-wrap: wrap;
+    }
+    .contact .contact-content, .contact .contact-form{
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 2rem;
     }
     footer{
         margin: 0;
@@ -1022,6 +1118,20 @@ footer .copyright{
 @media screen and (max-width: 600px) {
     .services .testimonial-item{
         width: 65%;
+    }
+    footer .footer-sec .footer-item{
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .footer-sec .footer-item.words{
+        width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .footer-sec{
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 @media screen and (max-width: 650px) {
