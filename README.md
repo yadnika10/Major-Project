@@ -1,6 +1,40 @@
 # Major-Project
 Hosted-Link:: https://yadnika10.github.io/Major-Project/
 <br>
+Note:--Huge File
+<br>
+1.Navbar:<br>
+-created a navbar section added one image i.e logo and ul to the navbar section.<br>
+-Gave the display as flex, flex direction as row and position as fixed and gave a z-index to that and color to the navbar and some padding the ul also display flex.<br>
+-Added the icons and clip-path code to that and hover effect<br>
+2.Home-page:<br>
+-It has some text and background image as cover and position as center and min-height to that.
+3.Intro-section:<br>
+-Intro has one image and one text section gave main section padding and added two divs one for img-box and other for text.<br>
+-Gave two boxes as 40% and 70% width, and img width as 100% so it covers the whole space then some greyscale to image and transition on hover effect.<br>
+-It also has one skill-container 3 large icons and info below it also as felx.<br>
+-the boxes took 30% width each.<br>
+4.Services:<br>
+-It and total 4 parts, first part has cards display as flex.<br>
+-second part similar to intro part but the image takes the whole width so margin and padding from left zero and the 2nd proportion is reverse to first one.<br>
+-fourth part has testimonials it has a scroll effect to it and display as flex.<br>
+5.Call Me:<br>
+-It has some text on left and form on right. one div for text and other for form enclosed in a container div and display as flex and some padding and colors to it.<br>
+6.Projects:<br>
+-Some buttons above that has display as flex and below images as grid and rows 2 so - 2,1fr and columns 4 so - 4,1fr.<br>
+-Hover to the images so transition and opacity to the text on hover.<br>
+7.Team:
+-Team has images and info and icons and display as flex.<br>
+8.About:
+-About similar to Intro Section.<br>
+9.Contact:<br>
+-Similar to the Call me section.<br>
+10.Media Queries:
+-Media Queries for 950px 900px and 600px
+-Where ever flex used gave it as width 100% and padding to 0 and flex wrap so it fits the particular screen and same for grid images rows and columns templates gave some valid values.<br>
+-Saw the css breakpoints and adjusted the content based on that.<br>
+10.For icons used clip-path gave hover effects and change som e padding or style for Media Queries added menu bar display as none in Desktop screen and display as initial in small screens.<br>
+
 ![1](https://github.com/yadnika10/Major-Project/assets/122971264/f7909269-7790-4836-8529-1a677cd34f41)
 ![2](https://github.com/yadnika10/Major-Project/assets/122971264/1a6e284a-2c2f-46d5-a610-f2c3cb846fa3)
 ![3](https://github.com/yadnika10/Major-Project/assets/122971264/a0b6e5fb-2d29-4913-a1cb-df3ed402c63f)
